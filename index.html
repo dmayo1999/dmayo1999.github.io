@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David Gibson — Web Design for Local Businesses</title>
+  <meta name="description" content="Clean, modern websites for local businesses across Brevard County, FL. Starting at $500. Built by David Gibson — dgib.me." />
+  <meta property="og:title" content="David Gibson — Web Design for Brevard County" />
+  <meta property="og:description" content="Affordable, modern website redesigns for local businesses on Florida's Space Coast. Starting at $500." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="dgib.me — home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">dgib<span class="logo-tld">.me</span></span>
+      </a>
+      <nav class="nav__links" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav__cta">Get a Quote</a>
+      </nav>
+      <button class="nav__theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="nav__mobile-toggle" aria-label="Toggle menu" id="mobile-toggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav__mobile" id="mobile-nav" aria-hidden="true">
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#process" class="mobile-link">Process</a>
+      <a href="#pricing" class="mobile-link">Pricing</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#contact" class="mobile-link mobile-link--cta">Get a Quote</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero__inner">
+        <div class="hero__eyebrow">
+          <span class="pill">Melbourne, FL · Brevard County</span>
+        </div>
+        <h1 class="hero__headline">
+          Your business deserves<br />
+          <em>a better website.</em>
+        </h1>
+        <p class="hero__sub">
+          I build clean, fast, mobile-ready websites for local businesses across the Space Coast — restaurants, salons, auto shops, contractors, and more. Real results, no agency overhead.
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Get a Free Quote →</a>
+          <a href="#services" class="btn btn--ghost">See What's Included</a>
+        </div>
+        <div class="hero__proof">
+          <div class="proof-item">
+            <strong>$500</strong>
+            <span>starting price</span>
+          </div>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <strong>2–3 wks</strong>
+            <span>average turnaround</span>
+          </div>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <strong>Local</strong>
+            <span>Brevard-based</span>
+          </div>
+        </div>
+      </div>
+      <!-- Decorative grid lines -->
+      <div class="hero__grid" aria-hidden="true"></div>
+    </section>
+
+    <!-- THE PROBLEM -->
+    <section class="problem">
+      <div class="container">
+        <div class="problem__inner">
+          <div class="problem__text">
+            <h2>An outdated website is costing you customers — right now.</h2>
+            <p>Most visitors decide whether to trust a business in under 3 seconds. If your website looks like it was built in 2012, loads slowly on a phone, or can't be found on Google — those customers are going somewhere else.</p>
+            <p>I've audited dozens of local Brevard businesses. The problems are always the same: non-responsive layouts, no online booking, broken links, and menus on Google Drive. Easy fixes with a big impact.</p>
+          </div>
+          <div class="problem__list">
+            <div class="problem__item problem__item--bad">
+              <div class="problem__icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+              </div>
+              <span>Breaks on mobile phones</span>
+            </div>
+            <div class="problem__item problem__item--bad">
+              <div class="problem__icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+              </div>
+              <span>Can't be found on Google</span>
+            </div>
+            <div class="problem__item problem__item--bad">
+              <div class="problem__icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+              </div>
+              <span>Menu hidden in a PDF or Google Drive</span>
+            </div>
+            <div class="problem__item problem__item--bad">
+              <div class="problem__icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+              </div>
+              <span>No contact form — just an @aol.com email</span>
+            </div>
+            <div class="problem__item problem__item--bad">
+              <div class="problem__icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+              </div>
+              <span>Looks like every other competitor's site</span>
+            </div>
+            <div class="problem__divider">After a redesign</div>
+            <div class="problem__item problem__item--good">
+              <div class="problem__icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Fast, responsive on any device</span>
+            </div>
+            <div class="problem__item problem__item--good">
+              <div class="problem__icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>SEO-ready from day one</span>
+            </div>
+            <div class="problem__item problem__item--good">
+              <div class="problem__icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Real contact forms that actually work</span>
+            </div>
+            <div class="problem__item problem__item--good">
+              <div class="problem__icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>A design that matches your reputation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Services</p>
+          <h2>Built for local businesses.<br />Priced like a human.</h2>
+          <p class="section-sub">No agency markups. No locked-in monthly retainers. You own everything when we're done.</p>
+        </div>
+        <div class="services__grid">
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3>Website Redesign</h3>
+            <p>Take your existing site and give it a complete modern overhaul. Mobile-first, fast, and professional. Your customers will notice.</p>
+            <ul class="service-list" role="list">
+              <li>New responsive design</li>
+              <li>Matching your brand colors & logo</li>
+              <li>Mobile-optimized layout</li>
+              <li>Updated contact & hours info</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>New Website Build</h3>
+            <p>Starting from scratch? I'll build your entire web presence from the ground up — domain, hosting guidance, and every page your business needs.</p>
+            <ul class="service-list" role="list">
+              <li>Up to 7 custom pages</li>
+              <li>Contact form & Google Maps</li>
+              <li>Google Business Profile sync</li>
+              <li>Basic SEO setup</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <h3>Quick Fixes & Repairs</h3>
+            <p>Broken links, hacked content, outdated menu pages, non-working contact forms. Sometimes you just need someone to fix what's broken — fast.</p>
+            <ul class="service-list" role="list">
+              <li>Malware & spam cleanup</li>
+              <li>Broken link & form fixes</li>
+              <li>Content & photo updates</li>
+              <li>Speed improvements</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process" id="process">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">How It Works</p>
+          <h2>Simple. Three steps.</h2>
+        </div>
+        <div class="process__steps">
+          <div class="process__step">
+            <div class="step-num">01</div>
+            <div class="step-content">
+              <h3>We Talk</h3>
+              <p>Send me an email or give me a call. I'll ask a few questions about your business, what you need, and what you're hoping to improve. No pushy sales — just a conversation.</p>
+            </div>
+          </div>
+          <div class="process__connector" aria-hidden="true"></div>
+          <div class="process__step">
+            <div class="step-num">02</div>
+            <div class="step-content">
+              <h3>I Build</h3>
+              <p>I design and build your site and show you exactly what it looks like before anything goes live. You can request changes — it's your site. Once you're happy, I handle the launch.</p>
+            </div>
+          </div>
+          <div class="process__connector" aria-hidden="true"></div>
+          <div class="process__step">
+            <div class="step-num">03</div>
+            <div class="step-content">
+              <h3>You Launch</h3>
+              <p>Your new site goes live and you own it completely. I'll walk you through how to update it yourself, and I'm around if you ever need help down the road.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Pricing</p>
+          <h2>Clear pricing.<br />No surprises.</h2>
+          <p class="section-sub">Every project is unique, but here's what most local businesses invest. 50% upfront, 50% on delivery.</p>
+        </div>
+        <div class="pricing__grid">
+          <div class="pricing-card">
+            <div class="pricing-card__header">
+              <p class="tier-name">Starter</p>
+              <p class="tier-price"><span>$500</span> <span class="tier-range">– $750</span></p>
+              <p class="tier-desc">1–3 page refresh. Great for service businesses that just need to look current.</p>
+            </div>
+            <ul class="tier-features" role="list">
+              <li>Up to 3 pages</li>
+              <li>Mobile-responsive design</li>
+              <li>Contact form</li>
+              <li>Google Maps embed</li>
+              <li>Basic SEO setup</li>
+            </ul>
+            <a href="#contact" class="btn btn--outline">Get Started</a>
+          </div>
+          <div class="pricing-card pricing-card--featured">
+            <div class="pricing-card__badge">Most Popular</div>
+            <div class="pricing-card__header">
+              <p class="tier-name">Standard</p>
+              <p class="tier-price"><span>$800</span> <span class="tier-range">– $1,200</span></p>
+              <p class="tier-desc">Full redesign for established businesses. The complete package most clients choose.</p>
+            </div>
+            <ul class="tier-features" role="list">
+              <li>Up to 7 pages</li>
+              <li>Custom design & branding</li>
+              <li>Contact & booking forms</li>
+              <li>Google Business Profile sync</li>
+              <li>SEO + site speed optimization</li>
+              <li>Photo gallery</li>
+              <li>1 round of revisions</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary">Get Started</a>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-card__header">
+              <p class="tier-name">Premium</p>
+              <p class="tier-price"><span>$1,200</span> <span class="tier-range">– $1,500</span></p>
+              <p class="tier-desc">Complex builds. Online menus, booking systems, portfolios, and multi-location businesses.</p>
+            </div>
+            <ul class="tier-features" role="list">
+              <li>Unlimited pages</li>
+              <li>Online booking / ordering</li>
+              <li>Interactive menu system</li>
+              <li>Review integration</li>
+              <li>Full SEO setup</li>
+              <li>2 rounds of revisions</li>
+              <li>30 days post-launch support</li>
+            </ul>
+            <a href="#contact" class="btn btn--outline">Get Started</a>
+          </div>
+        </div>
+        <p class="pricing__note">Not sure which tier you need? <a href="#contact">Just reach out</a> — I'll tell you exactly what I'd recommend and why.</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__text">
+            <p class="section-label">About</p>
+            <h2>Hi, I'm David.</h2>
+            <p>I'm a developer and designer based in Melbourne, Florida — right here on the Space Coast. I've spent time auditing dozens of local Brevard businesses and found the same thing everywhere: great businesses with terrible websites that don't match what they've built.</p>
+            <p>I build sites using modern tools and real code — not page builders — so they're fast, secure, and easy to maintain. I work with business owners directly, not through a project manager, so you know exactly what's happening and when.</p>
+            <p>My goal is simple: give local businesses a web presence that actually reflects the quality of their work — at a price that makes sense.</p>
+            <div class="about__tags">
+              <span class="tag">Melbourne, FL</span>
+              <span class="tag">HTML / CSS / JS</span>
+              <span class="tag">AI-assisted development</span>
+              <span class="tag">Brevard County local</span>
+            </div>
+          </div>
+          <div class="about__visual" aria-hidden="true">
+            <div class="about__card">
+              <div class="about__monogram">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="64" height="64" rx="16" fill="currentColor" opacity="0.08"/>
+                  <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="26" font-weight="800" fill="currentColor">DG</text>
+                </svg>
+              </div>
+              <div class="about__stat">
+                <strong>Brevard County</strong>
+                <span>Local & available</span>
+              </div>
+              <div class="about__divider"></div>
+              <div class="about__stat">
+                <strong>Fast turnaround</strong>
+                <span>Most sites in 2–3 weeks</span>
+              </div>
+              <div class="about__divider"></div>
+              <div class="about__stat">
+                <strong>You own it</strong>
+                <span>No monthly fees, no lock-in</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <div class="contact__text">
+            <p class="section-label">Contact</p>
+            <h2>Let's talk about your website.</h2>
+            <p>Tell me a bit about your business and what you're looking for. I'll get back to you the same day — usually within a few hours.</p>
+            <a href="mailto:david@dgib.me" class="contact__email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              david@dgib.me
+            </a>
+            <p class="contact__note">Based in Melbourne, FL. Available for in-person meetings across Brevard County.</p>
+          </div>
+          <form class="contact__form" id="contact-form" onsubmit="handleSubmit(event)" novalidate>
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="business">Business name</label>
+              <input type="text" id="business" name="business" placeholder="Smith's Diner" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="jane@yourbusiness.com" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">What do you need? <span class="optional">(optional)</span></label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell me about your business and what you'd like to improve…"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+              Send Message →
+            </button>
+            <div class="form-success" id="form-success" aria-live="polite" hidden>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Message sent! I'll be in touch soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#" aria-label="dgib.me — back to top" class="nav__logo">
+            <span class="logo-mark" aria-hidden="true"></span>
+            <span class="logo-text">dgib<span class="logo-tld">.me</span></span>
+          </a>
+          <p>Web design for local businesses across Brevard County, FL.</p>
+        </div>
+        <div class="footer__links">
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#about">About</a>
+          <a href="mailto:david@dgib.me">david@dgib.me</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 David Gibson · Melbourne, FL · <a href="mailto:david@dgib.me">david@dgib.me</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
